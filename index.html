@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Pagina</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Plaats jouw lievelings recept op onze website!</h1>
+            <nav>
+                <ul class="nav-element">
+                    <li>
+                        <a href="index.html">Home pagina</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <form name="receptenForm" method="POST" data-netlify="true">
+                    <label for="NameInput">Name:</label>
+                    <input type="text" name="name" id="NameInput" placeholder="Naam">
+
+                    <label for="emailInput">Emailadres:</label>
+                    <input type="email" name="email" id="emailInput" placeholder="Email">
+
+                    <label for="telInput">Telefoonnummer:</label>
+                    <input type="tel" name="telNr" id="telInput">
+
+                    <label for="ageInput">Leeftijd:</label>
+                    <input type="number" name="age" id="ageInput">
+
+                    <label for="birthInput">Geboortedatum:</label>
+                    <input type="date" name="dateofbirth" id="birthInput">
+
+                    
+                    <p>Gender:</p>
+                    <div>
+                        <label for="maleInput">Male:</label>
+                        <input type="radio" name="gender" id="maleInput" value="male">
+
+                        <label for="femaleInput">Female:</label>
+                        <input type="radio" name="gender" id="femaleInput" value="female">
+                    </div>
+
+                    <p>Favoriete keuken:</p>
+                    <div>
+                        <label for="frenchInput">French</label>
+                        <input type="checkbox" name="favorieteCuisine" id="frenchInput" value="french">
+                        
+                        <label for="italiaansInput">Italiaans</label>
+                        <input type="checkbox" name="favorieteCuisine" id="italiaansInput" value="italiaans">
+    
+                        <label for="spaansInput">Spaans</label>
+                        <input type="checkbox" name="favorieteCuisine" id="spaansInput" value="spaans">
+    
+                        <label for="arabischInput">Arabisch</label>
+                        <input type="checkbox" name="favorieteCuisine" id="arabischInput" value="arabisch">
+                    </div>
+                    
+                    <label for="favkleurInput">Favoriete kleur van schort:</label>
+                    <input type="color" id="favkleurInput" name="favkleur" value="#ff0000">
+
+                    <label for="textveld">Biografie:</label>
+                    <textarea name="textveld" id="textInput" cols="30" rows="10"></textarea>
+
+                    <label for="mijnReceptInput">Upload mijn laatste recept:</label>
+                    <input type="file" id="mijnReceptInput" name="mijnRecept">
+
+                    <label for="resceptenWebsiteInput">Wat is je lievelings recepten website:</label>
+                    <input type="url" id="resceptenWebsiteInput" name="resceptenWebsite">
+
+                    <input type="reset" name="reset" id="resetBtn">
+
+                    <input type="submit" name="submit" id="submitBtn">
+                </form>
+            </section>
+
+        </main>
+
+
+    </div>
+
+</body>
+
+</html>
